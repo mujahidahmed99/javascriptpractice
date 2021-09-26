@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="quiz-container" id="quiz_questions">
+        <div class="quiz-content">
+            <h3 class="question-header" id="question">Question</h3>
+            <ul class="questions">
+                <li>
+                    <input type="radio" id="question_one" name="quiz_answer" class="quiz-answer" value="A">
+                    <label id="label_question_one" for="question_one">A</label>
+                </li>
+                <li>
+                    <input type="radio" id="question_two" name="quiz_answer" class="quiz-answer" value="B">
+                    <label id="label_question_two" for="question_two">B</label>
+                </li>
+                <li>
+                    <input type="radio" id="question_three" name="quiz_answer" class="quiz-answer" value="C">
+                    <label id="label_question_three" for="question_three">C</label>
+                </li>
+                <li>
+                    <input type="radio" id="question_four" name="quiz_answer" class="quiz-answer" value="D">
+                    <label id="label_question_four" for="question_four">D</label>
+                </li>
+            </ul>
+        </div>
+        <button id="next_question" class="quiz-btn">Next Question</button>
+    </div>
+    <div class="quiz-hide quiz-container" id="results">
+        <div class="quiz-content">
+            <h3 id="score_result" class="question_header"></h3>
+        </div>
+        <button id="reload_quiz" class="quiz-btn">Retry</button>
+    </div>
+</body>
+</html>

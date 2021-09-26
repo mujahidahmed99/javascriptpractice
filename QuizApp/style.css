@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    font-family: 'Georama', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #F3F3FB;
+}
+
+.quiz-container{
+    background-color: #ffff;
+    width: 600px;
+    max-width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 5px rgb(100, 100, 100, 0.2);
+}
+
+.questions{
+    padding: 0;
+}
+
+.quiz-hide{
+    display: none;
+}
+
+.quiz-content{
+    padding: 2rem;
+}
+
+.quiz-content li{
+    padding: 0.5rem 0;
+}
+
+.quiz-btn{
+    background-color: #5f27cd;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    color: #ffff;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.quiz-btn:hover{
+    background-color: #341f97;
+}

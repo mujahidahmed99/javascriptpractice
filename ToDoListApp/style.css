@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Georama', 'sans serif';
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+}
+
+.list-backdrop{
+    background-color: green;
+    padding: 2rem 0.5rem 0.5rem 0.5rem;
+}
+
+.list-container{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.list-container button{
+    padding: 0.25rem 1rem;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.list-container h2{
+    margin: 0;
+}
+
+.add-btn{
+    background-color: #0093D5;
+}
+
+.clear-btn{
+    background-color: #0093D5;
+}
+
+.empty-btn{
+    background-color: #9B1C20;
+}
+
+.save-btn{
+    background-color: #49B749;
+}
+
+.list-container ol{
+    margin: 2rem 0;
+}
+
+ol li{
+    padding: 0.25rem;
+    cursor: default;
+    user-select: none;
+}
+
+ol li:nth-child(odd) {
+    background: #ddd;
+}
+
+li.completed{
+    text-decoration: line-through;
+    color: grey;
+}

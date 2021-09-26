@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    list-style: none;
+    letter-spacing: 1px;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Georama', 'sans serif';
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    min-height: 100vh;
+}
+
+.countdown-container{
+    display: flex;
+    grid-column: 1/15;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-backdrop{
+    padding: 3% 10%;
+    width: 1050px;
+    max-height: 620px;
+    background-image: url("https://images.unsplash.com/photo-1509773896068-7fd415d91e2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-repeat: no-repeat;
+    color: white;
+    box-shadow: 0 0 15px black;
+}
+
+.countdown-title{
+    font-size: 3rem;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.title-date{
+    font-size: 1.2rem;
+}
+
+.countdown-list{
+    padding: 10% 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.countdown-list span{
+    display: block;
+    padding: 0;
+    font-size: 2rem;
+}
+
+.countdown-list li{
+    padding: 0% 2% 0% 0%;
+    text-align: center;
+}
+
+.countdown-list li:first-child .numbers-left{
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.countdown-list li:last-child{
+    padding: 0px;
+}
+
+.countdown-list li:last-child .numbers-left{
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.numbers-left{
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 173px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 5px 10px black;
+}
+
+.input-container{
+    grid-column: 12/15;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button-container{
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.input-field header{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.input-field ul{
+    padding: 0;
+}
+
+.input-field ul li{
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field input{
+    font-size: 1.2rem;
+    padding: 0.25rem;
+}
+
+.submit-btn{
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    font-family: inherit;
+    background: linear-gradient(245deg, rgba(2,0,36,1) 0%, rgba(10,15,75,1) 70%, rgba(31,36,164,1) 100%);
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}

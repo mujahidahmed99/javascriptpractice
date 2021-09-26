@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    padding: 20px;
+}
+
+.welcome-wrapper{
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.welcome{
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.welcome-wrapper button{
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: #33C3F0;
+    color: white;
+    cursor: pointer;
+}
+
+.welcome-wrapper > button > i{
+    margin-left: 10px;
+}
+
+.meal-wrapper{
+    max-width: 800px;
+    margin: 0px auto;
+    display: flex;
+    padding: 20px 0px;
+}
+
+.left-side{
+    margin-right: 20px;
+}
+
+.image{
+    min-width: 200px;
+    max-width: 500px;
+}
+
+.image img{
+    max-width: 100%;
+}
+
+.left-side ul{
+    padding: 0;
+    list-style: none;
+}
+
+.description-tags{
+    font-weight: bold;
+}
+
+.ingredients ul{
+    padding: 0 0 0 20px;
+    list-style: circle;
+}
+
+.ingredients > ul > li{
+    padding: 3px 0;
+}
+
+.right-side h2{
+    margin: 0;
+}
+
+.video-wrapper{
+    max-width: 800px;
+    margin: auto;
+}
